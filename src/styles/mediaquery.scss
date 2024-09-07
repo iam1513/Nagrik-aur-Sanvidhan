@@ -1,0 +1,107 @@
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  #learn {
+    .categories-container {
+      margin-left: 25px;
+      margin-right: 25px;
+    }
+
+    .image {
+      object-fit: cover;
+      height: 150px;
+      width: 150px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #learn {
+    .categories-container {
+      flex-direction: row;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    .image-container {
+      display: none;
+    }
+    .image {
+      display: none;
+    }
+    .details-container {
+      height: 300px;
+      width: 100%;
+      padding: 4px;
+    }
+  }
+}
+
+// TIMELINE
+@media screen and (max-width: 900px) {
+  #timeline {
+    > h1 {
+      text-align: flex-start;
+      color: #ff6347; // Random color
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      padding-left: 20%;
+      font: 800 3rem Arial, sans-serif; // Example font
+      letter-spacing: 4px;
+    }
+    .timelineBox::after {
+      left: 31px;
+      background-color: #ffd700; // Random color
+    }
+
+    .timelineItem {
+      width: 100%;
+      padding-left: 5rem;
+      padding-right: 2rem;
+    }
+
+    .rightTimeline {
+      left: 0%;
+    }
+    .leftTimeline,
+    .rightTimeline {
+      &::after {
+        left: 15px;
+        background-color: #32cd32; // Random color
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 786px) {
+  #timeline {
+    > h1 {
+      text-align: flex-start;
+      color: #ff6347; // Random color
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      padding-left: 20%;
+      font: 800 3rem Arial, sans-serif; // Example font
+      letter-spacing: 4px;
+    }
+    .timelineBox::after {
+      left: 31px;
+      background-color: #ffd700; // Random color
+    }
+
+    .timelineItem {
+      width: 100%;
+      padding-left: 5rem;
+      padding-right: 2rem;
+    }
+
+    .rightTimeline {
+      left: 0%;
+    }
+    .leftTimeline,
+    .rightTimeline {
+      &::after {
+        left: 15px;
+        background-color: #32cd32; // Random color
+      }
+    }
+  }
+}

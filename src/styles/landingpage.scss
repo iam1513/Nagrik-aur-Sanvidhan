@@ -1,0 +1,205 @@
+.constitution-page {
+  // Constitution Landing Section
+  .constitution-landing {
+    display: flex;
+    margin: 0 auto;
+    height: 91vh;
+    font-family: "Arial", sans-serif;
+    background-color: #e6f0f8;
+
+    .content {
+      flex: 1;
+      padding-left: 4rem;
+      //   padding-right: 2rem;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+      h1 {
+        font-size: 3.5rem;
+        color: #333;
+        max-width: 500px;
+        margin-bottom: 1rem;
+      }
+
+      .country-name {
+        color: #ff7f00;
+        font-size: 4rem;
+      }
+
+      p {
+        padding-left: 4rem;
+        font-size: 2rem;
+        color: #666;
+        margin-bottom: 2rem;
+        font-weight: 300;
+        font-family: Roboto;
+        max-width: 600px;
+        line-height: 2rem;
+      }
+
+      .buttons {
+        display: flex;
+        gap: 1rem;
+
+        .btn {
+          padding: 0.75rem 1.5rem;
+          border: none;
+          border-radius: 5px;
+          font-size: 1rem;
+          cursor: pointer;
+          transition: background-color 0.3s;
+
+          &.btn-primary {
+            background-color: #007bff;
+            color: white;
+
+            &:hover {
+              background-color: #0056b3;
+            }
+          }
+
+          &.btn-secondary {
+            background-color: white;
+            color: #007bff;
+            border: 1px solid #007bff;
+
+            &:hover {
+              background-color: #f0f0f0;
+            }
+          }
+        }
+      }
+    }
+
+    .image-container {
+      flex: 1;
+      display: flex;
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+
+  // Explore Section
+  .explore-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 1rem;
+    background-color: #4a90e2; // Background color to match the blue background
+
+    .section-title {
+      font-size: 2.5rem;
+      color: #ffffff;
+      margin-bottom: 2rem;
+    }
+
+    .cards-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem; // Space between cards
+
+      .card {
+        width: 300px;
+        height: 300px;
+        background-color: #e6f0f8; // Light background for the text cards
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px; // Rounded corners
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+        h3 {
+          font-size: 2.2rem;
+          max-width: 2rem;
+          display: flex;
+          justify-content: center;
+          color: #fff;
+          text-align: center;
+        }
+      }
+
+      .image-card {
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: none;
+        width: 300px;
+        height: 300px;
+        border-radius: 20px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 20px;
+        }
+
+        .overlay {
+          position: absolute;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.5); // Semi-transparent overlay
+          border-radius: 20px;
+          color: #ffffff;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+
+  // Constitution Section
+  .constitution-section {
+    background-color: #e7f6fd;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    .row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+
+      .column {
+        flex: 1;
+        padding: 1rem;
+        display: flex;
+
+        // Align images to the left and text to the right for specific columns
+        &:first-child {
+          justify-content: flex-start; // Align image to the left
+        }
+
+        &:nth-child(2) {
+          justify-content: flex-end; // Align text to the right
+        }
+
+        &.text-column {
+          p {
+            font-size: 1.2rem;
+            color: #555;
+            line-height: 1.8;
+            text-align: left;
+          }
+        }
+
+        .image {
+          width: 75%;
+          height: 60vh;
+          border-radius: 8px;
+        }
+      }
+    }
+  }
+}

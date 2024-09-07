@@ -31,7 +31,7 @@
   width: 70%;
   padding: 8px;
   position: relative;
-  height: 160px;
+  height: 180px;
   padding: 24px;
   overflow-y: auto; // Adds vertical scrollbar if content overflows
   overflow-x: hidden; // Hides horizontal scrollbar
@@ -41,48 +41,33 @@
     width: 8px; // Width of the scrollbar
     display: hidden;
   }
-
-  &::-webkit-scrollbar-track {
-    // background: #f0f0f0; // Background color of the scrollbar track
-  }
-
-  &::-webkit-scrollbar-thumb {
-    // background: #888; // Color of the scrollbar thumb
-    border-radius: 4px; // Rounded corners for the scrollbar thumb
-  }
-
-  &::-webkit-scrollbar-thumb:hover {
-    // background: #555; // Color of the scrollbar thumb on hover
-  }
 }
 
-.heading {
+.explore-heading {
   font-weight: bold;
   font-size: 24px;
-  padding-left: 20px;
+  padding-left: 60px;
+  padding-top: 20px;
+  padding-bottom: 50px;
   height: 30px;
 }
 
 .description {
   padding-right: 20px;
   padding-left: 20px;
-  padding-bottom: 50px;
-  //   white-space: normal;
-  //   text-overflow: ellipsis;
-  //   overflow: hidden;
 }
 
-.learn-more-button {
+.learn-more-butt {
   background-color: blue;
   color: orange;
   position: sticky;
-  left: 2020px;
-  top: 2020px;
+  left: 2000px;
+  bottom: 100px;
   height: 40px;
   width: 100px;
   border-radius: 8px;
   cursor: pointer;
-  z-index: 1; // Ensure the button is above other content
+  z-index: 1;
 }
 
 .explore-heading {
